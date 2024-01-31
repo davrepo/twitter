@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { BsTwitter } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs/index.js";
 
 const SidebarLogo = () => {
   const router = useRouter();

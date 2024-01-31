@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { BiCalendar } from "react-icons/bi";
+import { BiCalendar } from "react-icons/bi/index.js";
 import { format } from "date-fns";
 
 import useCurrentUser from "@/hooks/useCurrentUser";

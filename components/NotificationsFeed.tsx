@@ -1,4 +1,4 @@
-import { BsTwitter } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs/index.js";
 
 import useNotifications from "@/hooks/useNotifications";
 import useCurrentUser from "@/hooks/useCurrentUser";

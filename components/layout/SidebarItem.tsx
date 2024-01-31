@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 import useLoginModal from '@/hooks/useLoginModal';
 import useCurrentUser from '@/hooks/useCurrentUser';
-import { BsDot } from 'react-icons/bs';
+import { BsDot } from 'react-icons/bs/index.js';
 
 interface SidebarItemProps {
   label: string;
@@ -15,7 +15,7 @@ interface SidebarItemProps {
   alert?: boolean;
 }
 
-const SidebarItem: React.FC<SidebarItemProps> = ({ label, icon: Icon, href, auth, onClick, alert }) => {
+const SidebarItem = ({ label, icon: Icon, href, auth, onClick, alert }: SidebarItemProps): JSX.Element => {
   const router = useRouter();
   const loginModal = useLoginModal();
 
@@ -56,7 +56,6 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ label, icon: Icon, href, auth
         relative
         hidden 
         lg:flex 
-        items-row 
         gap-4 
         p-4 
         rounded-full 

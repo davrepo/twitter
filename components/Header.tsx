@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useCallback } from "react";
-import { BiArrowBack } from "react-icons/bi";
+import { BiArrowBack } from "react-icons/bi/index.js";
 
 interface HeaderProps {
   showBackArrow?: boolean;
